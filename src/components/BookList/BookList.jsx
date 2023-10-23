@@ -4,9 +4,7 @@ import Book from "../BookList/Book";
 import Loading from "../Loader/Loader";
 import coverImg from "../../images/cover_not_found.jpg";
 import "./BookList.css";
-
 //https://covers.openlibrary.org/b/id/240727-S.jpg
-
 const BookList = () => {
   const {books, loading, resultTitle} = useGlobalContext();
   const booksWithCovers = books.map((singleBook) => {
@@ -17,9 +15,7 @@ const BookList = () => {
       cover_img: singleBook.cover_id ? `https://covers.openlibrary.org/b/id/${singleBook.cover_id}-L.jpg` : coverImg
     }
   });
-
   if(loading) return <Loading />;
-
   return (
     <section className='booklist'>
       <div className='container'>
@@ -39,5 +35,4 @@ const BookList = () => {
     </section>
   )
 }
-
 export default BookList

@@ -3,12 +3,10 @@ import {FaSearch} from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 import { useGlobalContext } from '../../context.';
 import "./SearchForm.css";
-
 const SearchForm = () => {
   const {setSearchTerm, setResultTitle} = useGlobalContext();
   const searchText = useRef('');
   const navigate = useNavigate();
-
   useEffect(() => searchText.current.focus(), []);
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,10 +17,8 @@ const SearchForm = () => {
     } else {
       setSearchTerm(searchText.current.value);
     }
-
     navigate("/book");
   };
-
   return (
     <div className='search-form'>
       <div className='container'>
@@ -40,5 +36,4 @@ const SearchForm = () => {
     </div>
   )
 }
-
 export default SearchForm

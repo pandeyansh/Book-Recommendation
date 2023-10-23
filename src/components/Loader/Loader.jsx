@@ -1,7 +1,6 @@
 import React from 'react';
 import LoaderImg from "../../images/loader.svg";
 import "./Loader.css";
-
 const Loader = () => {
   return (
     <div className='loader flex flex-c'>
@@ -9,5 +8,4 @@ const Loader = () => {
     </div>
   )
 }
-
 export default Loader

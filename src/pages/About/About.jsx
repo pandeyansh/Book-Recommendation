@@ -1,7 +1,6 @@
 import React from 'react';
 import "./About.css";
 import aboutImg from "../../images/about-img.jpg";
-
 const About = () => {
   return (
     <section className='about'>
@@ -9,7 +8,6 @@ const About = () => {
         <div className='section-title'>
           <h2>About</h2>
         </div>
-
         <div className='about-content grid'>
           <div className='about-img'>
             <img src = {aboutImg} alt = "" />
@@ -24,5 +22,4 @@ const About = () => {
     </section>
   )
 }
-
 export default About

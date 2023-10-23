@@ -44,7 +44,6 @@
 .nav-link:hover{
     color: var(--purple-color);
 }
-
 @media screen and (min-width: 992px){
     .navbar-collapse{
         position: relative;
